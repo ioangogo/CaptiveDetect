@@ -9,6 +9,11 @@ global site
 md5ofs = "4589f42e1546aa47ca181e5d949d310b"
 site = "http://start.ubuntu.com/connectivity-check"
 #The main part of the tester
+
+def openbrowser():
+    os=os.name
+    if os=nt:
+        #Test for browsers and launch
 def hashcon(sitecon):
     #This part hashes the content of the website that urllib has just downloaded
     m = hashlib.md5()
